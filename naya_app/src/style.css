@@ -1,0 +1,30 @@
+/* src/styles.css */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+}
+.grid-container {
+  box-shadow: 0 6px 18px rgba(20, 20, 30, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.grid-container.compact .ag-cell {
+  padding: 6px 8px !important;
+}
+.grid-container.comfortable .ag-cell {
+  padding: 10px 12px !important;
+}
+.status-active {
+  background: rgba(16, 185, 129, 0.12);
+  padding: 4px 8px;
+  border-radius: 12px;
+  display: inline-block;
+}
+.action-btn {
+  background: transparent;
+  border: 1px solid #e2e8f0;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
