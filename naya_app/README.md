@@ -1,16 +1,111 @@
-# React + Vite
+# FactWise Employee Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional employee management dashboard built with React and AG Grid for the FactWise Frontend Developer assessment.
 
-Currently, two official plugins are available:
+![Dashboard Screenshot](./screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- **Interactive Data Grid** - Client-side AG Grid with 20 employee records
+- **Advanced Filtering** - Text, number, and date filters on all columns
+- **Sorting & Resizing** - Sortable and resizable columns
+- **Performance Metrics** - Real-time statistics dashboard with key metrics
+- **Color-Coded Ratings** - Visual performance rating indicators
+- **Pagination** - Clean pagination for better data navigation
+- **Responsive Design** - Mobile-friendly layout
+- **Professional Styling** - Modern, clean UI design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
+```
+src/
+├── components/
+│   └── DataGrid.jsx          # AG Grid component with column definitions
+├── data/
+│   └── SampleRows.js         # Employee dataset (20 records)
+├── App.jsx                   # Main application component
+└── style.css                 # Global styles and AG Grid theme
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+
+- **React** - Frontend framework
+- **Vite** - Build tool and dev server
+- **AG Grid Community** - Data grid component
+- **CSS3** - Custom styling
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd factwise-dashboard
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## 📊 Dashboard Features
+
+### Statistics Cards
+- **Total Employees** - Count of all employees
+- **Active Employees** - Count of currently active employees
+- **Average Salary** - Calculated average salary across all employees
+- **Average Rating** - Mean performance rating
+
+### Data Grid Capabilities
+- Multi-column sorting
+- Advanced filtering (text, number, date)
+- Column resizing
+- Row selection
+- Cell text selection
+- Pagination (20 rows per page)
+- Custom cell renderers for status and performance ratings
+
+## 🎨 Key Components
+
+### DataGrid.jsx
+Contains the AG Grid configuration with:
+- Column definitions for all employee fields
+- Custom value formatters (salary, skills)
+- Conditional cell styling for performance ratings
+- Status indicators (Active/Inactive)
+
+### SampleRows.js
+Employee data structure includes:
+- Personal information (name, email, age)
+- Employment details (department, position, hire date)
+- Performance metrics (rating, projects completed)
+- Skills and manager information
+
+## 📝 Assignment Requirements
+
+✅ Client-side AG Grid implementation  
+✅ React framework  
+✅ Sample dataset with 20 rows  
+✅ Clean and professional layout  
+✅ Scalable and functional dashboard  
+✅ Efficient data handling  
+
+## 👨‍💻 Developer
+
+Created for FactWise Frontend Developer Assessment
+
+**Submission Deadline:** 5 PM, Sunday, 30th November 2025
+
+## 📄 License
+
+This project is created for assessment purposes.
+
+---
+
+**Built with ❤️ using React + AG Grid**
