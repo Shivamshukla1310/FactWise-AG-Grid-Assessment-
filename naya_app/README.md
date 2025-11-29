@@ -2,7 +2,7 @@
 
 A professional employee management dashboard built with React and AG Grid for the FactWise Frontend Developer assessment.
 
-![Dashboard Screenshot](./screenshot.png)
+![Dashboard Screenshot](./src/Screenshot%202025-11-29%20120927.png)
 
 ## 🚀 Features
 
